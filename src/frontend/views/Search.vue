@@ -10,43 +10,23 @@
     <div class="search__options q-pa-sm">
       <q-field
         class="home-icons search__options--input search__departure"
-        icon="flight_takeoff"
+        icon="meeting_room"
         icon-color="primary"
         :label-width="8"
       >
         <q-input
           class="search__departure"
           v-model="departureCity"
-          stack-label="Departure airport"
+          stack-label="Meeting Room"
           data-test="search-departure"
         >
-          <q-autocomplete
+          <!-- <q-autocomplete
             class="search__departure--suggestion text-bold"
             :min-characters="3"
             :static-data="{ field: 'city', list: suggestionList }"
             :filter="fuzzySearchFilter"
             value-field="sublabel"
-          />
-        </q-input>
-      </q-field>
-      <q-field
-        class="home-icons search__options--input search__arrival"
-        icon="flight_land"
-        icon-color="primary"
-        :label-width="8"
-      >
-        <q-input
-          class="search__arrival"
-          v-model="arrivalCity"
-          stack-label="Arrival airport"
-        >
-          <q-autocomplete
-            class="search__arrival--suggestion text-bold"
-            :min-characters="3"
-            :static-data="{ field: 'city', list: suggestionList }"
-            :filter="fuzzySearchFilter"
-            value-field="sublabel"
-          />
+          /> -->
         </q-input>
       </q-field>
       <q-field
@@ -67,7 +47,7 @@
         @click="search"
         class="cta__button"
         color="secondary"
-        label="Search flights"
+        label="Search Rooms"
         :disable="
           !$v.departureCity.isAirport ||
             $v.departureCity.$invalid ||

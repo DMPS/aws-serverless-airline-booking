@@ -36,7 +36,7 @@
             <q-progress :percentage="loyalty.percentage" color="secondary" />
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="profile__preferences--heading col-12 text-left q-mt-lg">
             <q-toolbar color="grey-1 text-black">
               <q-toolbar-title class="text-bold">Preferences</q-toolbar-title>
@@ -64,7 +64,7 @@
               </a>
             </q-list>
           </div>
-        </div>
+        </div> -->
       </div>
       <amplify-sign-out class="Form--signout"></amplify-sign-out>
     </div>

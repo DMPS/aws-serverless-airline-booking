@@ -12,7 +12,7 @@
           <q-icon name="menu" />
         </q-btn>
 
-        <q-toolbar-title class="brand">Flight App</q-toolbar-title>
+        <q-toolbar-title class="brand">Colafizz</q-toolbar-title>
         <q-btn
           flat
           round
@@ -38,7 +38,7 @@
           <q-item-main label="Profile" sublabel="User profile" />
         </q-item>
         <q-item :to="{ name: 'bookings' }" exact>
-          <q-item-side icon="flight" />
+          <q-item-side icon="event_seat" />
           <q-item-main label="My Bookings" sublabel="Bookings" />
         </q-item>
       </q-list>
